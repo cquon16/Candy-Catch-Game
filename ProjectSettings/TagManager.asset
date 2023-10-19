@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Candy1
+  - Candy2
+  - Candy3
+  - Candy4
+  - Candy5
+  - Candy6
   layers:
   - Default
   - TransparentFX

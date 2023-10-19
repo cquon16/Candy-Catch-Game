@@ -19,7 +19,7 @@ public class Candy : MonoBehaviour
 
     IEnumerator CandySpawn()
     {
-        for(i = 0; i<16; i++)
+        for(i = 0; i<15; i++)
         {
             var wanted = Random.Range(min,max);
             var position = new Vector3(wanted,4);
@@ -28,4 +28,5 @@ public class Candy : MonoBehaviour
             Destroy(gameObject, 5f);
         }
     }
+
 }

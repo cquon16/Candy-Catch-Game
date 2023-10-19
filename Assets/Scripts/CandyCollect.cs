@@ -7,7 +7,7 @@ public class CandyCollect : MonoBehaviour
 
    public int points;
 
-   public void OnTriggerEnter(Collider Col)
+   public void OnTriggerEnter2D(Collider2D Col)
     {
         if(Col.gameObject.tag == "Candy1")
         {
