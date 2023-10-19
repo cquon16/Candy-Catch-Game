@@ -27,6 +27,8 @@ public class Candy : MonoBehaviour
             yield return new WaitForSeconds(Random.Range(1, 4));
             Destroy(gameObject, 5f);
         }
+
+
     }
 
 }

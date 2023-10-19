@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CandyCollect : MonoBehaviour
 {
 
    public int points;
+   [SerializeField] Text text;
 
    public void OnTriggerEnter2D(Collider2D Col)
     {
@@ -14,6 +16,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 10;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -23,6 +26,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 3;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -32,6 +36,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 1;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -41,6 +46,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 6;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -50,6 +56,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 8;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
@@ -59,6 +66,7 @@ public class CandyCollect : MonoBehaviour
             Debug.Log("Candy Collected!");
             points = points + 2;
             Debug.Log("Points:" + points);
+            text.text = "Points:" + points;
             //Col.gameObject.SetActive(false);
             Destroy(Col.gameObject);
         }
